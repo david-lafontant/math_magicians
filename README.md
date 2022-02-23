@@ -1,4 +1,42 @@
-# Getting Started with Create React App
+
+
+# Math magicians
+
+"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+
+Make simple calculations.
+Read a random math-related quote.
+
+## Set up
+This is the first project of the Math Magicians application. I set up the environment and tools needed to develop a React application. 
+
+## Built With
+### Major languages:
+- HTML
+- CSS
+- JavaScript
+
+### Technologies used:
+- npm
+- React
+- Webpack
+Learning objectives
+Set up a React app.
+Use React documentation.
+Live Demo
+Live Demo Link
+
+## Getting Started
+In order to see the project in your browser you must click on the link "Live Demo"
+
+To get a local copy up and running follow these simple example steps:
+
+### Prerequisites
+If they are not installed download and install: Node, Git and and code editor. Then 
+
+- Clone the repository by typing this in your terminal  `git clone 
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +106,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+## Author
+
+#### 👤 Author
+- GitHub: [@david-lafontant](https://github.com/david-lafontant)
+- Twitter: [@manikatex](https://twitter.com/manikatex)
+
+## Contributing 
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+Please give a ⭐️ if you like this project! 
+
+## Acknowledgments
+- Hat tip to anyone contributed one way or the other.
+- Inspiration
+- etc
+
+
+## License
+This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
