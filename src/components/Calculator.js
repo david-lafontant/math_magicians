@@ -1,50 +1,62 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './Calculator.css';
+import calculate from './calculate';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Calculator = () => {
+  const stateObj = {
+    total: 0,
+    next: null,
+    operation: null,
+  };
 
-  render() {
-    return (
-      <div className="container">
-        <div className="row screen ">0</div>
-        <div className="row ">
-          <p className="item">AC</p>
-          <p className="item">+/-</p>
-          <p className="item">%</p>
-          <p className="item last-col">÷</p>
-        </div>
-        <div className="row ">
-          <p className="item">7</p>
-          <p className="item">8</p>
-          <p className="item">9</p>
-          <p className="item last-col">X</p>
-        </div>
+  const [properties, setProperties] = useState(stateObj);
 
-        <div className="row ">
-          <p className="item">4</p>
-          <p className="item">5</p>
-          <p className="item">9</p>
-          <p className="item last-col">-</p>
-        </div>
-        <div className="row ">
-          <p className="item">1</p>
-          <p className="item">2</p>
-          <p className="item">3</p>
-          <p className="item last-col">+</p>
-        </div>
-        <div className="row last row">
-          <p className="item zero">0</p>
-          <p className="item">&middot;</p>
-          <p className="item last-col">&#61;</p>
-        </div>
+  const handleClick = (item) => {
+    const btnValue = item.target.textContent;
+    const newProperties = { ...properties };
+    setProperties(calculate(newProperties, btnValue));
+  };
+
+  return (
+    <div className="container">
+      <div className="row screen ">
+        { properties.total}
+        { properties.operation }
+        { properties.next }
+      </div>
+      <div className="row ">
+        <button type="button" onClick={handleClick} className="item">AC</button>
+        <button type="button" onClick={handleClick} className="item">+/-</button>
+        <button type="button" onClick={handleClick} className="item">%</button>
+        <button type="button" onClick={handleClick} className="item last-col">÷</button>
+      </div>
+      <div className="row ">
+        <button type="button" onClick={handleClick} className="item">7</button>
+        <button type="button" onClick={handleClick} className="item">8</button>
+        <button type="button" onClick={handleClick} className="item">9</button>
+        <button type="button" onClick={handleClick} className="item last-col">X</button>
       </div>
 
-    );
-  }
-}
+      <div className="row ">
+        <button type="button" onClick={handleClick} className="item">4</button>
+        <button type="button" onClick={handleClick} className="item">5</button>
+        <button type="button" onClick={handleClick} className="item">9</button>
+        <button type="button" onClick={handleClick} className="item last-col">-</button>
+      </div>
+      <div className="row ">
+        <button type="button" onClick={handleClick} className="item">1</button>
+        <button type="button" onClick={handleClick} className="item">2</button>
+        <button type="button" onClick={handleClick} className="item">3</button>
+        <button type="button" onClick={handleClick} className="item last-col">+</button>
+      </div>
+      <div className="row last row">
+        <button type="button" onClick={handleClick} className="item zero">0</button>
+        <button type="button" onClick={handleClick} className="item">&middot;</button>
+        <button type="button" onClick={handleClick} className="item last-col">&#61;</button>
+      </div>
+    </div>
+
+  );
+};
 
 export default Calculator;
