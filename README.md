@@ -7,6 +7,10 @@
 Make simple calculations.
 Read a random math-related quote.
 
+
+## Screenshot
+![screenshot](calculator.png)
+
 ## Set up
 This is the first project of the Math Magicians application. I set up the environment and tools needed to develop a React application. 
 
