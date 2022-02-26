@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Calculator.css';
-import calculate from './calculate';
+import calculate from './logic/calculate';
 
 const Calculator = () => {
   const stateObj = {
@@ -40,7 +40,7 @@ const Calculator = () => {
       <div className="row ">
         <button type="button" onClick={handleClick} className="item">4</button>
         <button type="button" onClick={handleClick} className="item">5</button>
-        <button type="button" onClick={handleClick} className="item">9</button>
+        <button type="button" onClick={handleClick} className="item">6</button>
         <button type="button" onClick={handleClick} className="item last-col">-</button>
       </div>
       <div className="row ">
