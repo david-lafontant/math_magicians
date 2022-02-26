@@ -12,7 +12,6 @@ html {
 
 .container {
   display: grid;
-  max-width: 300px;
   gap: 0;
 }
 
@@ -24,7 +23,7 @@ html {
 }
 
 .item {
-  min-width: 50px;
+  width: 6rem;
   background-color: #e0e0e0;
   border: thin solid #bababa;
   margin: 0;
@@ -54,6 +53,9 @@ html {
   align-items: center;
   justify-content: flex-end;
   color: #fff;
+  font-size: 1.3rem;
+  padding: 0 0.6rem;
+  font-weight: bold;
 }
 
 .last-col {
@@ -66,4 +68,5 @@ html {
 
 .zero {
   grid-column: span 2;
+  width: 12rem;
 }
