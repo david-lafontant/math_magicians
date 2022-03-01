@@ -28,7 +28,7 @@ ul {
 
 ul li a {
   text-decoration: none;
-  color: #00f;
+  color: #0102fe;
   outline: none;
   font-size: 1.3rem;
   font-weight: bold;
@@ -37,7 +37,7 @@ ul li a {
 
 ul li:not(:first-child)::before {
   content: "";
-  border-left: 2px solid #000;
+  border-left: 2px solid #010102;
   padding: 0 0 0 1rem;
   margin-left: 1rem;
 }
