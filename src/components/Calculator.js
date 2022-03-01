@@ -18,7 +18,9 @@ const Calculator = () => {
   };
 
   return (
-    <div className="container">
+<div className='pageContainer'>
+<p className="description">Let&apos;s do some math!</p>
+<div className="container">
       <div className="row screen ">
         { properties.total}
         { properties.operation }
@@ -56,6 +58,14 @@ const Calculator = () => {
         <button type="button" onClick={handleClick} className="item last-col">=</button>
       </div>
     </div>
+
+
+
+</div>
+
+
+
+
 
   );
 };
