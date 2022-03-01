@@ -1,13 +1,22 @@
-html {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.pageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hail > p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem;
 }
 
 .container {
