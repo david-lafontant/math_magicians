@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+nav {
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #0102fe;
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul li:not(:first-child)::before {
+  content: "";
+  border-left: 2px solid #010102;
+  padding: 0 0 0 1rem;
+  margin-left: 1rem;
+}
+
+.logo {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  font-family: cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.logo.active {
+  text-decoration: none;
+}
